@@ -28,6 +28,94 @@
       <a href="#help">Help</a>
     </nav>
   </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #005fa3;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background: #0077cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+  <main>
+    <h2>Hello, world!</h2>
+    <p>This is a simple website built with HTML, CSS, and JavaScript.</p>
+    <button onclick="changeText()">Click Me</button>
+    <p id="message"></p>
+  </main>
+  <footer>
+    &copy; 2025 My Website. All rights reserved.
+  </footer>
+
+  <script>
+    function changeText() {
+      const msg = document.getElementById("message");
+      msg.textContent = "Thanks for clicking! 🎉";
+    }
+  </script>
+</body>
+</html>
 
   <section class="products" id="tees">
     <h2>Graphic Tees</h2>
