@@ -123,3 +123,27 @@
       <img src="https://via.placeholder.com/200x200?text=Tee+1" alt="Tee 1" />
       <p>Cool Graphic Tee</p>
       <p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Williams Company | Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>The Williams Company</h1>
+    <p class="slogan">Built for Hustle. Styled for Life.</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="shop">
+    <h2>Our Collection</h2>
+
+
