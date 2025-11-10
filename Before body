@@ -1,0 +1,15 @@
+// --- Falling "The Williams Company" animation ---
+function createFallingText() {
+  const container = document.getElementById("falling-bg");
+  const text = document.createElement("div");
+  text.classList.add("falling-text");
+  text.textContent = "The Williams Company";
+
+  text.style.left = Math.random() * 100 + "vw";
+  text.style.animationDuration = (5 + Math.random() * 5) + "s";
+  container.appendChild(text);
+
+  setTimeout(() => text.remove(), 10000);
+}
+
+setInterval(createFallingText, 500);
